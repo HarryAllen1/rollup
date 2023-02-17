@@ -96,7 +96,8 @@ const getLinkForOption = (option: string) =>
 	border-radius: 8px;
 }
 
-.dark .options {
+.dark .options,
+.dark .add-option {
 	--bg-inactive: var(--vp-c-gray-dark-3);
 	--bg-default: var(--vp-c-bg);
 }
@@ -156,6 +157,10 @@ section code {
 
 .add-option:hover {
 	color: var(--vp-c-text-1);
+}
+
+.add-option select option {
+	background-color: var(--bg-inactive);
 }
 
 select {
